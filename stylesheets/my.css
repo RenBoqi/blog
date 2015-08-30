@@ -1,5 +1,10 @@
 @CHARSET "ISO-8859-1";
 .img{
 	width:1000px;
-	height:750px;
+	height:650px;
+}
+.kalender
+{
+	float:left;
+	padding-left:50px;
 }

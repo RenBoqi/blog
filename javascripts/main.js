@@ -17,4 +17,3 @@ if(current >=img.length) current = 0
 document.imgs.src = img[current].src
 setTimeout("start()",speed);
 }
-
