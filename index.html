@@ -6,20 +6,21 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/index.css">
 		<link rel="stylesheet" href="stylesheets/index.css" type="text/css" >
 		<title>Renboqi</title>
+		
 	</head>
 	<body >
- 		<div style="background-color:#E5E4E2;height:600px">
+ 		<div  style="background-color:#E5E4E2;">
  			<header >
 				<div >
 					<nav>
-						<ul style="background-color:#D1D0CE;background:url(images/big1.jpg);background-repeat:no-repeat" >
-							<div style="width:70px;margin-left:900px;padding-top:10px"> 
-							<li style="list-style:none"><a style="text-decoration:none"><font face="verdana" color="white">Home</font></a></li>
+						<ul  id="first" style="background-color:green;background:url(images/big1.jpg);background-repeat:no-repeat;height:100px" >
+							<div id="titel" style="text-align:left;width:50px;background-color:#800000"> 
+							<li style="list-style:none"><a style="text-decoration:none"href="index.html"><font face="verdana" color="white">Home</font></a></li>
 							</div>
-							<div style="width:70px;margin-left:970px" > 
+							<div style="width:70px;text-align:left;margin-top:10px;" > 
 							<li style="list-style:none"><a style="text-decoration:none" href="Blog.html"><font face="verdana" color="white">Blog</font></a></li>
 							</div>
-							<div style="width:70px;margin-left:1040px;padding-bottom:10px"> 
+							<div style="width:70px;text-align:left;margin-top:10px;padding-bottom:10px"> 
 							<li style="list-style:none"><a style="text-decoration:none" href="Blog.html"><font face="verdana" color="white">Contact</font></a></li>
 							</li>
 						</ul>
@@ -27,26 +28,43 @@
 				</div>
 				<div></div>
 			</header>
-			<div style="background-color:#454545;height:400px" >
+			<div id="second"style="background-color:#454545;height:400px" >
 				<div >
-					<div style="padding-top:150px;padding-left:50px;padding-right:50px;">
-						<div>
-							<h1 style="padding-left:500px">REN BOQI</h1>
-							<strong style="padding-left:510px">Dreamer and Doer</strong>
+					<div style="padding-top:150px">
+						<div  style="text-align:center">
+							<h1 id="name" style="text-align:center">REN BOQI</h1>
+							<strong id="strong"style="text-align:center">Dreamer and Doer</strong>
 						</div>
 					</div>
 				 </div>
-		<!--style="background:#FFFFFF; color:#000"
+		<!--style="background:#FFFFFF; color:#000      #D1D0CE"
 		style="background:url(images/safa.jpg);
 		
 		<img src="./images/background.jpg" id="bg" alt="image de fond" />  -->
 			</div >
-			<div style="background-color:#E5E4E2;height:200px;background:url(images/0-2.jpeg);">
+			<div id="third"style="background-color:#E5E4E2;height:200px;background:url(images/0-2.jpeg);">
 			
 			</div>
  	
  		</div>
+ 	<script type="text/javascript">
+		/*将获取的值存到变量里*/
+		offsetwidth=document.body.offsetWidth;
+		offsetheight=document.body.offsetHeight;
+		clientwidth=document.body.clientWidth;
+		clientheight=document.body.clientHeight;
+		firstheight=(offsetheight*10000)/(9*10000);
+		secondheight=5*firstheight*10000/10000;
+		thirdheight=2*firstheight*10000/10000;
+		document.getElementById("titel").style.width='100px';
+		document.getElementById("first").style.height=''+firstheight+'px';
+		document.getElementById("first").style.width=''+clientwidth+'px';
+		document.getElementById("second").style.height=''+secondheight+'px';
+		document.getElementById("second").style.width=''+(clientwidth+50)'px';
+		document.getElementById("third").style.height=''+thirdheight+'px';
+		document.getElementById("third").style.width=''+(clientwidth+50)'px';
+	
+	</script>
 
 	</body>
 </html>
-
